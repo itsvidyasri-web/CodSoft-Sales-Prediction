@@ -1,25 +1,24 @@
 # Sales Prediction Using Machine Learning
 
-### CodSoft Data Science Internship Project
+A Machine Learning-based Sales Prediction application that estimates product sales based on advertising expenditure across TV, Radio, and Newspaper platforms.
 
 **Live Demo:** https://codsoft-sales-prediction-eqwpqpdewmaxgqjkxtawdk.streamlit.app/
 
 ## Project Overview
 
-Sales Prediction Using Machine Learning is a data science project that predicts product sales based on advertising expenditure across TV, Radio, and Newspaper platforms.
+This project uses Linear Regression, a supervised machine learning algorithm, to understand the relationship between advertising expenditure and sales.
 
-This project uses a Linear Regression algorithm to analyse advertising data and estimate sales based on user-provided advertising budgets.
+Users can interact with the dashboard by adjusting advertising budgets and generating sales predictions instantly.
 
-An interactive web application is developed using Streamlit, allowing users to enter advertising expenses and receive instant sales predictions.
+The application is built using Python and Streamlit, providing a simple and interactive interface for exploring sales predictions.
 
-## Project Objectives
+## Objectives
 
-- Analyse advertising expenditure data.
-- Understand the relationship between advertising and sales.
-- Perform data preprocessing and exploration.
-- Build a Machine Learning prediction model.
-- Evaluate model performance using standard metrics.
-- Develop an interactive web application for sales prediction.
+- Analyze advertising expenditure data.
+- Understand the relationship between advertising channels and sales.
+- Build a Linear Regression prediction model.
+- Create an interactive web dashboard.
+- Demonstrate how machine learning can support advertising and sales analysis.
 
 ## Technologies Used
 
@@ -28,31 +27,35 @@ An interactive web application is developed using Streamlit, allowing users to e
 - Scikit-learn
 - Streamlit
 - Pickle
-- GitHub
+- Matplotlib / Streamlit Charts
 
-## Dataset Description
+## Dataset
 
-The project uses the Advertising dataset (`Advertising.csv`).
+**Dataset:** Advertising Dataset
 
-The dataset contains the following features:
+**Source:** [Kaggle – Advertising Dataset](https://www.kaggle.com/datasets/bumba5341/advertisingcsv)
+
+The dataset contains advertising expenditure and corresponding sales information.
+
+### Dataset Features
 
 | Feature | Description |
 |---|---|
-| TV | TV advertising expenditure |
-| Radio | Radio advertising expenditure |
-| Newspaper | Newspaper advertising expenditure |
-| Sales | Actual sales values |
+| TV | Advertising expenditure on TV |
+| Radio | Advertising expenditure on Radio |
+| Newspaper | Advertising expenditure on Newspaper |
+| Sales | Target variable used for prediction |
 
 ## Machine Learning Algorithm
 
 **Linear Regression**
 
-Linear Regression is used to understand the relationship between advertising expenditure and sales.
+Linear Regression is used to learn the relationship between the advertising expenditure features and sales.
 
-### Model Development
+### Model Development Process
 
-1. Load the advertising dataset.
-2. Perform exploratory data analysis.
+1. Load the dataset using Pandas.
+2. Perform basic data exploration.
 3. Check for missing values.
 4. Separate input features and target variable.
 5. Split the dataset into training and testing sets.
@@ -60,20 +63,15 @@ Linear Regression is used to understand the relationship between advertising exp
 7. Evaluate model performance.
 8. Save the trained model using Pickle.
 
-### Model Evaluation Metrics
+## Dashboard Features
 
-- Mean Absolute Error (MAE)
-- Mean Squared Error (MSE)
-- R² Score
-
-## Application Features
-
-- Simple and interactive user interface.
-- TV advertising expenditure input.
-- Radio advertising expenditure input.
-- Newspaper advertising expenditure input.
-- Instant sales prediction.
-- User-friendly prediction results.
+- Interactive advertising budget sliders.
+- TV, Radio, and Newspaper expenditure inputs.
+- Automatic total advertising budget calculation.
+- Sales prediction with one click.
+- Predicted sales displayed using a metric card.
+- Advertising budget breakdown bar chart.
+- User-friendly Streamlit dashboard.
 
 ## Project Structure
 
@@ -114,32 +112,33 @@ pip install -r requirements.txt
 python -m streamlit run app.py
 ```
 
-### 5. Open the Application
+The application will open in your browser.
 
-Open the local URL displayed in your terminal.
+## How to Use
 
-## Live Application
-
-Try the deployed application here:
-
-**[Sales Prediction – Live Demo](https://codsoft-sales-prediction-eqwpqpdewmaxgqjkxtawdk.streamlit.app/)**
+1. Open the Sales Prediction Dashboard.
+2. Adjust TV, Radio, and Newspaper advertising budgets.
+3. Review the total advertising budget.
+4. Click the **Predict Sales** button.
+5. View the predicted sales result.
+6. Analyze the advertising budget breakdown chart.
 
 ## Project Outcome
 
-Successfully developed an interactive Machine Learning application that predicts estimated sales based on advertising expenditure using Linear Regression.
+This project demonstrates the practical implementation of a supervised machine learning algorithm and its integration into an interactive web application.
 
-This project provided practical experience in Python programming, data analysis, Machine Learning, model evaluation, and web application deployment.
+It provides a simple way to explore how different advertising budgets relate to predicted sales.
 
-## Internship Details
+## Internship Information
 
 **Organization:** CodSoft  
 **Domain:** Data Science  
-**Project:** Sales Prediction Using Machine Learning
+**Project:** Sales Prediction Using Python
 
-## Conclusion
+## Author
 
-This project demonstrates how Machine Learning can be applied to analyse advertising data and estimate sales. It also provides practical experience in developing and deploying a complete data science application.
+Developed as part of the CodSoft Data Science Internship.
 
 ---
 
-**Developed as part of the CodSoft Data Science Internship.**
+**Note:** Predictions are model-based estimates using the supplied dataset. They are not guaranteed actual sales results.
