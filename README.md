@@ -27,7 +27,7 @@ The application is built using Python and Streamlit, providing a simple and inte
 - Scikit-learn
 - Streamlit
 - Pickle
-- Matplotlib / Streamlit Charts
+  
 
 ## Dataset
 
